@@ -1,0 +1,101 @@
+/* CSS styles for the app */
+
+/* Color Variables */
+:root {
+  --primary-color: gold;
+  --secondary-color: yellow;
+  --accent-color: green;
+  --background-color: #f2f2f2;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.tabs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.tabs li {
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.section {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  padding: 10px;
+}
+
+.read-more {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.quick-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}

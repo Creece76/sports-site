@@ -3,91 +3,287 @@
 <head>
   <title>Youth, Sports, Gender Culture and Social Services</title>
   <link rel="stylesheet" type="text/css" href="styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
 </head>
 <body>
+ <div class="top-sec">
   <header class="header">
-    <div class="logo-container">
-      <img src="logo.jpg" alt="Logo" class="logo">
-      <h1 class="site-name">Youth, Sports, Gender Culture and Social Services</h1>
-    </div>
-    <ul class="tabs">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Departments</a></li>
-      <li><a href="#">Games</a></li>
-      <li><a href="#">Store House</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Search</a></li>
-    </ul>
+    
+    <div class="logo"> <img src="C:\Users\alqaus\Documents\sports-site-main\logo no bg.png" alt="Logo" class="logo"></div>
+   <div class="name-tab">
+     <h1 class="site-name">Youth, Sports, Gender Culture and Social Services</h1>
+     <ul class="tabs">
+      <li><button>home</button></li>
+      <li><button>Youth</button></li>
+      <li>
+        <div class="sports-dropmenu">
+          <button class="sports-menu">Sports</button>
+          <div class="sports-menu-content">
+            <ul>
+              <li><a href="#">Football</a></li>
+              <li><a href="#">Rugby</a></li>
+              <li><a href="#">Basketball</a></li>
+              <li><a href="#">Volleyball</a></li>
+              <li><a href="#">Athletics</a></li>
+              <li><a href="#">Indoor games</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><button>Gender</button></li>
+      <li><button>Culture</button></li>
+      <li><button>Social Services</button></li>
+      <li><button>About Us</button></li>
+      <li><button class="search">Search <img src="images/search.svg" alt=""></button></li>
+     </ul>
+   </div>
   </header>
 
-  <div class="content">
-    <section class="section">
-      <h2 class="section-title">Photo/Video Gallery</h2>
-      <div class="section-content">
-        <section class="photo-gallery">
-            <h2 class="section-title">Photo Gallery</h2>
-            <div class="gallery">
-              <div class="image-container">
-                <img src="rugby00.png" alt="Photo 1">
-                <div class="overlay">
-                  <div class="caption">Photo 1</div>
-                </div>
-              </div>
-              <div class="image-container">
-                <img src="basketball00.jpg" alt="Photo 2">
-                <div class="overlay">
-                  <div class="caption">Photo 2</div>
-                </div>
-              </div>
-              <div class="image-container">
-                <img src="basketball01.jpg" alt="Photo 3">
-                <div class="overlay">
-                  <div class="caption">Photo 3</div>
-                </div>
-              </div>
-              <!-- Add more image-container divs as needed -->
+  <main class="content">
+    <section class="Hero-section">
+      <div class="hero-section-content">
+        <div class="photo-slideshow">
+          <div class="image-container">
+            <div class="numbertext">1 / 3</div>
+            <img src="C:\Users\alqaus\Documents\sports-site-main\rugby00.png" alt="Photo 1" >
+            <div class="caption">Photo 1</div>
+          </div>
+          <div class="image-container">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/basketball2.png" alt="Photo 2" >
+            <div class="caption">Photo 2</div>
+          </div>
+          <div class="image-container">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/basketball3.jpg" alt="Photo 3" >
+            <div class="caption">Photo 3</div>
+          </div>
+          <!-- Add more image-container divs as needed -->
+          <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+      <div class="news">
+          <h2>News Update</h2>
+          <div class="news-update-content">
+            <div class="hot-news">
+              <p>Kenya up for a tuff game next week</p>
             </div>
-          </section>
+            <div class="hot-news">
+             <p>Morans </p> 
+            </div>
+            <div class="hot-news">
+              <p>Kenya up for a tuff game next week</p>
+            </div>
+            <div class="hot-news">
+             <p>Morans </p> 
+            </div>
+            
+            <a href="#" class="read-more">Read More</a>
+          </div>
       </div>
-      <a href="#" class="read-more">Read More</a>
     </section>
-
-    <section class="section">
-      <h2 class="section-title">News/Updates</h2>
-      <div class="section-content">
-        <!-- News/Updates Section HTML here -->
+  </div>
+    <section class="functions">
+      <h2 class="fuctions-h2">FUNCTIONS</h2>
+      <ul class="functions-list">
+        <li>Sports Development: Promoting and supporting sports activities and programs within the county.</li>
+        <li>Youth Development: Implementing initiatives and programs aimed at the holistic development of young people within the county. </li>
+        <li>Gender Equality and Women's Empowerment: Promoting gender equality.</li>
+        <li>Cultural Preservation and Promotion: Preserving and promoting the county's cultural heritage.</li>
+        <li>Social Services: Providing social welfare programs and services to vulnerable populations within the county.</li>
+      </ul>
+    </section>
+    <section class="scoreupdate">
+      <h2 class="scoreupdate-title">Scoreboard</h2>
+      <div class="scoreupdate-content">
+        <div>
+        <h3>Football scores</h3>
+        <table>
+          <tr>
+            <th>TIME</th>
+            <th>TEAMS</th>
+            <th>SCORE</th>
+            <th>STADIUM</th>
+          </tr>
+          <tr>
+            <td>11:30am</td>
+            <td>3KF vs SFC</td>
+            <td>0:0</td>
+            <td>Moi Stadium</td>
+          </tr>
+          <tr>
+            <td>Live</td>
+            <td>SFC vs GFC</td>
+            <td>1:0</td>
+            <td>Nyayo Stadium</td>
+          </tr>
+          <tr>
+            <td>Finished</td>
+            <td>KPF vs AFC</td>
+            <td>0:3</td>
+            <td>Raila Odinga stadium</td>
+          </tr>
+        </table>
       </div>
-      <a href="#" class="read-more">Read More</a>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Scoreboard</h2>
-      <div class="section-content">
+      <div class="scoreupdate-text">
+        <h2>Live score</h2>
+        <p>Get the latest sport news; be an informed fan.</p>
+        <button class="scoreupdate-btn">View More</button>
+      </div>
         <!-- Scoreboard HTML here -->
       </div>
-      <a href="#" class="read-more">Read More</a>
+      
     </section>
 
-    <section class="section">
-      <h2 class="section-title">County-wide Games</h2>
-      <div class="section-content">
-        <!-- County-wide Games HTML here -->
+    <section class="country-wide-section">
+      <h2 class="country-wide-title">Sports activity</h2>
+      <div class="country-wide-content">
+        <div class="allsports-news">
+          <div><img src="images/fkf.jpg"alt=""></div>
+             <div class="allsports-news-text">
+              <p>Football kenya federation commsions a new league.</p>
+              <a href="#">read more</a>
+            </div>
+             <div class="date">
+              6th June 2023 
+             </div>
+        </div>
+        <div class="allsports-news">
+          <div><img src="images/rugby.jpg" alt=""></div>
+            <div class="allsports-news-text">
+              <p>kenya scopes another trophy.</p>
+              <a href="#">read more</a>
+            </div>
+             <div class="date">
+              6th June 2023
+             </div>
+        </div>
+        <div class="allsports-news">
+          <div><img src="images/East-Africa-Football-scaled.jpg" alt=""></div>
+            <div class="allsports-news-text">
+             <p>Tuff but got the three points</p>
+             <a href="#">read more</a>
+            </div>
+            <div class="date">
+              6th June 2023
+            </div>
+        </div>
+        <div class="allsports-news">
+          <div><img src="images/voleyball.jpg" alt=""></div>
+            <div class="allsports-news-text">
+             <p>Women's volley ball team makes us proud again.</p>
+             <a href="#">read more</a>
+          </div>
+            <div class="date">
+              6th June 2023
+            </div>
+        </div>
+        <div class="allsports-news">
+          <div><img src="images/athletics.jpg" alt=""></div>
+           <div class="allsports-news-text">
+             <p>Omanyala aims 9.6sec.</p>
+             <a href="#">read more</a>
+           </div>
+          <div class="date">
+            6th June 2023
+          </div>
+        </div>
+        <div class="allsports-news">
+          <div><img src="images/basketball.jpg" alt=""></div>
+            <div class="allsports-news-text">
+              <p>kenya basketball news.</p>
+              <a href="#">read more</a>
+          </div>
+            <div class="date">
+              6th June 2023
+            </div>
+        </div>
       </div>
-      <a href="#" class="read-more">Read More</a>
+      <button>Read more</button>
     </section>
-  </div>
-
+    <div class="icon-links">
+      <div class="sport-icons">
+        <div><img src="icons/green ball 1.png" alt="basketball img" style="width: 50px; height: 50px;"/></div>
+        <a href="#">Basketball </a>
+      </div>
+      <div class="sport-icons">
+        <div><img src="icons/greeb ball.png" alt="football img"style="width: 50px; height: 50px;"/></div>
+        <a href="#">Football</a>
+      </div>
+      <div class="sport-icons">
+        <div><img src="icons/green rugby.png" alt="rugby img" style="width: 50px; height: 50px;"/></div>
+        <a href="#">Rugby</a>
+      </div>
+      <div class="sport-icons">
+        <div><img src="icons/running-man.png" alt="img" style="width: 50px; height: 50px;"/></div>
+        <a href="#">athletics</a>
+      </div>
+      <div class="sport-icons">
+        <div><img src="icons/green v ball.png" alt="volleyball img" style="width: 50px; height: 50px;"/></div>
+        <a href="#">Volleyball</a>
+      </div> 
+    </div>
+  
+  </main>
   <div class="quick-links">
-    <a href="#">Basketball</a>
-    <a href="#">Football</a>
-    <a href="#">Rugby</a>
-    <a href="#">Tennis</a>
-    <a href="#">Volleyball</a>
-    <a href="#">Cricket</a>
+    <div>
+      <h3>Shopping</h3>
+      <ul class="quick-links-content">
+        <li><a href="#">Jerseys</a></li>
+      </ul>
+      
+    </div>
+    <div>
+      <h3>About us</h3>
+      <ul class="quick-links-content">
+      <li><a href="#">about us</a></li>
+      <li><a href="#">youth</a></li>
+      <li><a href="#">Culture</a></li>
+      <li><a href="#">gender</a></li>
+      <li><a href="#">sports</a></li>
+     </ul>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul class="quick-links-content">
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">resources</a></li>
+      <li><a href="#">Tenders</a></li>
+      <li><a href="#">Startups</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    </div>
+    <div>
+      <h3>Contact us</h3>
+      <ul>
+        <li>embucountygovernment.go.ke</li>
+        <li class="s-icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-gmail"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+        </li>
+      </ul>
+       
+    </div>
+    
   </div>
 
+  
   <footer class="footer">
     &copy; 2023 Department of Sports. All rights reserved.
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
